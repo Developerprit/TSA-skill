@@ -1,7 +1,7 @@
 # TSA-skill
 
-> 让 agent 在开发 agent 类应用时，**默认**使用 [ThinkStack](https://github.com/Developerprit/ThinkStack.git) 架构的 WorkBuddy Skill。
-> A WorkBuddy Skill that makes **ThinkStack** the *default* architecture when building agent-class applications.
+> 让 agent 在开发 agent 类应用时，**默认**使用 [ThinkStack](https://github.com/Developerprit/ThinkStack.git) 架构的 Skill。
+> A Skill that makes **ThinkStack** the *default* architecture when building agent-class applications.
 
 ---
 
@@ -40,28 +40,13 @@ Triggers on any of: *develop/build an agent app, AI agent, multi-agent system, a
 
 ---
 
-## 目录结构 / Project layout
-
-```
-E:\PC\TSA-skill\
-├── .workbuddy\skills\TSA-skill\
-│   ├── SKILL.md                  # 技能本体（触发词 + 架构 + 执行逻辑 + 代码范式）
-│   ├── references\ARCHITECTURE.md# ThinkStack API 签名速查（从源码提炼）
-│   └── scripts\scaffold_agent_app.py  # 脚手架生成器（英文 CLI）
-├── Planning\Planning.md          # 规划文档
-├── index.html                    # 对外商业风格落地页（双语、浅/深色）
-└── README.md                     # 本文件
-```
-
----
-
 ## 快速开始 / Quick start
 
 ### 用脚手架生成 agent 应用骨架 / Scaffold an agent app
 
 ```bash
 # 生成基于 ThinkStack 的项目骨架
-python .workbuddy/skills/TSA-skill/scripts/scaffold_agent_app.py --name my_agent
+python skills/TSA-skill/scripts/scaffold_agent_app.py --name my_agent
 
 cd my_agent
 pip install -r requirements.txt
@@ -100,6 +85,6 @@ stack.shutdown()
 
 ## 许可证 / License
 
-本项目采用 **Available License**：https://license.kscm.top/available.md
+本项目采用 **MIT License**
 
-This project is licensed under the **Available License**: https://license.kscm.top/available.md
+This project is licensed under the **MIT License**
